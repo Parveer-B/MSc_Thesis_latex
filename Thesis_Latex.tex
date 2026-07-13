@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath} % For \eqref
+\usepackage{abstract}  
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry} 
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{tocloft} %Customizers things in contents, list of figures
+\usepackage{titlesec}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=teal,
+    pdftitle={Physics MSc Thesis},
+    pdfpagemode=FullScreen,
+    }
+% Define a breakable algorithm environment
+\makeatletter
+\newenvironment{breakablealgorithm}
+  {\begin{center}
+   \refstepcounter{algorithm}
+   \hrule height.8pt depth0pt \kern2pt
+   \renewcommand{\caption}[2][\relax]{%
+    {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+    \ifx\relax##1\relax 
+      \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+    \else
+      \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+    \fi
+    \kern2pt\hrule\kern2pt
+   }
+  }
+  {\kern2pt\hrule\relax}
+\makeatother
+
+
+\titleformat{\section}[block]{\Huge\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{1.5em}{5em} 
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1em}{}
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries} % Adjust font size and style of "Contents"
+\renewcommand{\cftloftitlefont}{\Huge\bfseries} % Adjust font size and style of "LOF"
+\renewcommand{\cftlottitlefont}{\Huge\bfseries} % Adjust font size and style of "LOT"
+\renewcommand{\refname}{\Huge Bibliography\vspace{1.5cm}}
+
+\graphicspath{ {./images/} }
+\onehalfspacing
+\begin{document}
+\setlength{\cftaftertoctitleskip}{2cm} % Customize
+\setlength{\cftafterloftitleskip}{2cm} % Customize
+\setlength{\cftafterlottitleskip}{2cm} % Customize
+% Title Page Block
+\begin{titlepage}
+    \centering % Center-aligns everything inside the title page
+    {\Huge Power Grid Asset Restoration Sequencing and Importance Metric for Improved Resilience \par} % Large title
+    \vspace{2cm}
+    {\huge Author: Parveer Banwait \par}
+    \vspace{0.25cm}
+    {\large Student Number: 1007016499 \par}
+    \vspace{1cm}
+    {\Large Supervised by: Professor Zeb Tate \par}
+    \vfill % Move proceeding text to bottom of the page
+    {\Large April 2025 \par}
+    \vspace{0.25cm}
+    {\Large ESC499: Thesis \par}
+    \vspace{0.25cm}
+    {\Large Final Report \par}
+\end{titlepage}
+\pagenumbering{roman}
+\vspace*{\fill}
+\begin{abstract}
+\begin{spacing}{2.0}
+Abstract
+\end{spacing}
+\end{abstract}
+\vspace*{\fill}
+\newpage
+\renewcommand{\abstractname}{Acknowledgements}  % Change heading name
+\vspace*{\fill}
+\begin{abstract}
+I would like to express my gratitude to my supervisor, \cite{carn_decade_2017} for something ig.
+\end{abstract}
+\vspace*{\fill}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\pagenumbering{arabic}
+\section{Introduction}
+
+
+
+
+
+\newpage
+\bibliographystyle{unsrt} % You can use other styles like 'unsrt', 'alpha', etc.
+\bibliography{references}
+
+\end{document}

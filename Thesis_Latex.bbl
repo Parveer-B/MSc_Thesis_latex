@@ -1,8 +1,45 @@
 \begin{thebibliography}{1}
 
-\bibitem{carn_decade_2017}
-S.~A. Carn, V.~E. Fioletov, C.~A. McLinden, C.~Li, and N.~A. Krotkov.
-\newblock A decade of global volcanic {SO2} emissions measured from space.
-\newblock {\em Scientific Reports}, 7(1):44095, March 2017.
+\bibitem{dessler_stratospheric_2013}
+A.~E. Dessler, M.~R. Schoeberl, T.~Wang, S.~M. Davis, and K.~H. Rosenlof.
+\newblock Stratospheric water vapor feedback.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  110(45):18087--18091, November 2013.
+
+\bibitem{shindell_climate_2001}
+Drew~T. Shindell.
+\newblock Climate and ozone response to increased stratospheric water vapor.
+\newblock {\em Geophysical Research Letters}, 28(8):1551--1554, 2001.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/1999GL011197.
+
+\bibitem{veenus_observational_2025}
+Venugopal Veenus and Siddarth~Shankar Das.
+\newblock Observational evidence of stratospheric cooling and surface warming
+  due to an increase of stratospheric water vapor by {Hunga}-{Tonga}
+  {Hunga}-{Ha}’apai.
+\newblock {\em Natural Hazards}, 121(11):13295--13304, June 2025.
+
+\bibitem{keeble_evaluating_2021}
+James Keeble, Birgit Hassler, Antara Banerjee, Ramiro Checa-Garcia, Gabriel
+  Chiodo, Sean Davis, Veronika Eyring, Paul~T. Griffiths, Olaf Morgenstern,
+  Peer Nowack, Guang Zeng, Jiankai Zhang, Greg Bodeker, Susannah Burrows,
+  Philip Cameron-Smith, David Cugnet, Christopher Danek, Makoto Deushi,
+  Larry~W. Horowitz, Anne Kubin, Lijuan Li, Gerrit Lohmann, Martine Michou,
+  Michael~J. Mills, Pierre Nabat, Dirk Olivié, Sungsu Park, Øyvind Seland,
+  Jens Stoll, Karl-Hermann Wieners, and Tongwen Wu.
+\newblock Evaluating stratospheric ozone and water vapour changes in {CMIP6}
+  models from 1850 to 2100.
+\newblock {\em Atmospheric Chemistry and Physics}, 21(6):5015--5061, March
+  2021.
+
+\bibitem{he_muted_2025}
+Ruogu He and Yi~Huang.
+\newblock Muted {Radiative} {Feedback} of {Stratospheric} {Water} {Vapor}
+  {Found} in a {Multimodel} {Assessment}.
+\newblock {\em Journal of Geophysical Research: Atmospheres},
+  130(12):e2025JD043676, 2025.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025JD043676.
 
 \end{thebibliography}

@@ -130,4 +130,45 @@ Zhipeng Qu, Yi~Huang, Paul~A. Vaillancourt, Jason N.~S. Cole, Jason~A.
 \newblock {\em Atmospheric Chemistry and Physics}, 20(4):2143--2159, February
   2020.
 
+\bibitem{long_aspects_1955}
+Robert~R. Long.
+\newblock Some {Aspects} of the {Flow} of {Stratified} {Fluids}: {III}.
+  {Continuous} {Density} {Gradients}.
+\newblock {\em Tellus A: Dynamic Meteorology and Oceanography}, 7(3):341--357,
+  January 1955.
+
+\bibitem{durran_mountain_1990}
+Dale~R. Durran.
+\newblock Mountain {Waves} and {Downslope} {Winds}.
+\newblock In Robert~M. Banta, G.~Berri, William Blumen, David~J. Carruthers,
+  G.~A. Dalu, Dale~R. Durran, Joseph Egger, J.~R. Garratt, Steven~R. Hanna,
+  J.~C.~R. Hunt, Robert~N. Meroney, W.~Miller, William~D. Neff, M.~Nicolini,
+  Jan Paegle, Roger~A. Pielke, Ronald~B. Smith, David~G. Strimaitis,
+  T.~Vukicevic, C.~David Whiteman, and William Blumen, editors, {\em
+  Atmospheric {Processes} over {Complex} {Terrain}}, pages 59--81. American
+  Meteorological Society, Boston, MA, 1990.
+
+\bibitem{markowski_mesoscale_2011}
+Paul Markowski and Yvette Richardson.
+\newblock {\em Mesoscale {Meteorology} in {Midlatitudes}}.
+\newblock Wiley, September 2011.
+
+\bibitem{baines_topographic_2022}
+Peter~G. Baines.
+\newblock {\em Topographic {Effects} in {Stratified} {Flows}}.
+\newblock Cambridge {Monographs} on {Mechanics}. Cambridge University Press,
+  Cambridge, 2 edition, 2022.
+
+\bibitem{rotunno_numerical_2018}
+Richard Rotunno and George~H. Bryan.
+\newblock Numerical {Simulations} of {Two}-{Layer} {Flow} past {Topography}.
+  {Part} {I}: {The} {Leeside} {Hydraulic} {Jump}.
+\newblock {\em Journal of Atmospheric Sciences}, April 2018.
+
+\bibitem{rotunno_numerical_2020}
+Richard Rotunno and George~H. Bryan.
+\newblock Numerical {Simulations} of {Two}-{Layer} {Flow} past {Topography}.
+  {Part} {II}: {Lee} {Vortices}.
+\newblock {\em Journal of Atmospheric Sciences}, February 2020.
+
 \end{thebibliography}

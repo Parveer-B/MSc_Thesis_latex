@@ -189,6 +189,13 @@ INPUT .\Thesis_Latex.lot
 INPUT Thesis_Latex.lot
 OUTPUT Thesis_Latex.lot
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\images\MMMFig12.12.png
+INPUT .\images\MMMFig12.12.png
+INPUT .\images\MMMFig12.12.png
+INPUT .\images\MMMFig12.12.png
+INPUT .\images\MMMFig12.12.png
+INPUT .\images\MMMFig12.12.png
+INPUT .\images\MMMFig12.12.png
 INPUT .\Thesis_Latex.bbl
 INPUT .\Thesis_Latex.bbl
 INPUT Thesis_Latex.bbl
@@ -210,5 +217,7 @@ INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb

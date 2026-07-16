@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.7)  14 JUL 2026 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.7)  16 JUL 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,52 +482,97 @@ Package hyperref Info: Link coloring ON on input line 64.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 \newpage
-               [1] (Thesis_Latex.bbl
-Underfull \hbox (badness 1248) in paragraph at lines 10--15
-[]\OT1/cmr/m/n/12 Drew T. Shin-dell.  Cli-mate and ozone re-sponse to in-creased strato-spheric wa-
- []
-
-
-Underfull \hbox (badness 4886) in paragraph at lines 10--15
+l.124 
+       [1] [2] [3] (Thesis_Latex.bbl
+Underfull \hbox (badness 3895) in paragraph at lines 10--15
 \OT1/cmr/m/n/12 ter va-por.  \OT1/cmr/m/it/12 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/12 , 28(8):1551--1554, 2001.  []eprint:
  []
 
 
-Underfull \hbox (badness 7888) in paragraph at lines 37--44
+Underfull \hbox (badness 6477) in paragraph at lines 42--49
 []\OT1/cmr/m/n/12 Ruogu He and Yi Huang.  Muted Ra-dia-tive Feed-back of Strato-spheric
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--44
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
 \OT1/cmr/m/n/12 Wa-ter Va-por Found in a Mul-ti-model As-sess-ment.  \OT1/cmr/m/it/12 Jour-nal of Geo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--44
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
 \OT1/cmr/m/it/12 phys-i-cal Re-search: At-mo-spheres\OT1/cmr/m/n/12 , 130(12):e2025JD043676, 2025.  []eprint:
  []
 
-) [2] (Thesis_Latex.aux)
+
+Underfull \hbox (badness 2134) in paragraph at lines 51--59
+\OT1/cmr/m/n/12 H. C. Pumphrey, G. L. Man-ney, Y. Wang, H. Su, L. Wu, W. G. Read,
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 51--59
+\OT1/cmr/m/n/12 sphere.  \OT1/cmr/m/it/12 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/12 , 49(13):e2022GL099381, 2022.  []eprint:
+ []
+
+[4]
+Underfull \hbox (badness 1460) in paragraph at lines 67--76
+\OT1/cmr/m/n/12 Reem Han-nun, Jen-nifer Hare, Apoorva Pandey, David S. Sayres, Thomas F.
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 78--86
+[]\OT1/cmr/m/n/12 Xun Wang, Yi Huang, Zhipeng Qu, Paul A. Vail-lan-court, Man-Kong Yau,
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 78--86
+\OT1/cmr/m/n/12 Jing Feng, Jef-fery Langille, and Adam Bourassa.  Con-vec-tively Trans-ported
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 78--86
+\OT1/cmr/m/n/12 Wa-ter Va-por Plumes in the Mid-lat-i-tude Lower Strato-sphere.  \OT1/cmr/m/it/12 Jour-nal of
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 78--86
+\OT1/cmr/m/it/12 Geo-phys-i-cal Re-search: At-mo-spheres\OT1/cmr/m/n/12 , 128(4):e2022JD037699, 2023.  []eprint:
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 111--117
+[]\OT1/cmr/m/n/12 Pao K. Wang.  Mois-ture plumes above thun-der-storm anvils and their
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 111--117
+\OT1/cmr/m/n/12 con-tri-bu-tions to cross-tropopause trans-port of wa-ter va-por in mid-lat-i-tudes.
+ []
+
+
+Underfull \hbox (badness 6758) in paragraph at lines 111--117
+\OT1/cmr/m/it/12 Jour-nal of Geo-phys-i-cal Re-search: At-mo-spheres\OT1/cmr/m/n/12 , 108(D6), 2003.  []eprint:
+ []
+
+[5]) [6] (Thesis_Latex.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Thesis_Latex.out' has not changed.
-(rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
+(rerunfilecheck)             Checksum: 1AA3A8FE528BE71EC2D07E284503C9A7;358.
  ) 
 Here is how much of TeX's memory you used:
- 11754 strings out of 474486
- 184178 string characters out of 5743284
- 1930542 words of memory out of 5000000
- 33855 multiletter control sequences out of 15000+600000
- 563944 words of font info for 56 fonts, out of 8000000 for 9000
+ 11789 strings out of 474486
+ 184870 string characters out of 5743284
+ 1934542 words of memory out of 5000000
+ 33873 multiletter control sequences out of 15000+600000
+ 564251 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,1340b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,1945b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis_Latex.pdf (8 pages, 127291 bytes).
+Output written on Thesis_Latex.pdf (12 pages, 147409 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

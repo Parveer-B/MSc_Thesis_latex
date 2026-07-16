@@ -188,6 +188,7 @@ INPUT .\Thesis_Latex.lot
 INPUT .\Thesis_Latex.lot
 INPUT Thesis_Latex.lot
 OUTPUT Thesis_Latex.lot
+INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Thesis_Latex.bbl
 INPUT .\Thesis_Latex.bbl
 INPUT Thesis_Latex.bbl

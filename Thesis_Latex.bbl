@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{dessler_stratospheric_2013}
 A.~E. Dessler, M.~R. Schoeberl, T.~Wang, S.~M. Davis, and K.~H. Rosenlof.
@@ -33,6 +33,11 @@ James Keeble, Birgit Hassler, Antara Banerjee, Ramiro Checa-Garcia, Gabriel
 \newblock {\em Atmospheric Chemistry and Physics}, 21(6):5015--5061, March
   2021.
 
+\bibitem{oneill_hydraulic_2021}
+Morgan~E O’Neill, Leigh Orf, Gerald~M. Heymsfield, and Kelton Halbert.
+\newblock Hydraulic jump dynamics above supercell thunderstorms.
+\newblock {\em Science}, 373(6560):1248--1251, September 2021.
+
 \bibitem{he_muted_2025}
 Ruogu He and Yi~Huang.
 \newblock Muted {Radiative} {Feedback} of {Stratospheric} {Water} {Vapor}
@@ -41,5 +46,88 @@ Ruogu He and Yi~Huang.
   130(12):e2025JD043676, 2025.
 \newblock \_eprint:
   https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025JD043676.
+
+\bibitem{millan_hunga_2022}
+L.~Millán, M.~L. Santee, A.~Lambert, N.~J. Livesey, F.~Werner, M.~J. Schwartz,
+  H.~C. Pumphrey, G.~L. Manney, Y.~Wang, H.~Su, L.~Wu, W.~G. Read, and
+  L.~Froidevaux.
+\newblock The {Hunga} {Tonga}-{Hunga} {Ha}'apai {Hydration} of the
+  {Stratosphere}.
+\newblock {\em Geophysical Research Letters}, 49(13):e2022GL099381, 2022.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL099381.
+
+\bibitem{dauhut_mechanisms_2018}
+Thibaut Dauhut, Jean-Pierre Chaboureau, Peter~H. Haynes, and Todd~P. Lane.
+\newblock The {Mechanisms} {Leading} to a {Stratospheric} {Hydration} by
+  {Overshooting} {Convection}.
+\newblock {\em Journal of Atmospheric Sciences}, December 2018.
+
+\bibitem{homeyer_extreme_2023}
+Cameron~R. Homeyer, Jessica~B. Smith, Kristopher~M. Bedka, Kenneth~P. Bowman,
+  David~M. Wilmouth, Rei Ueyama, Jonathan~M. Dean-Day, Jason~M. St.~Clair, Reem
+  Hannun, Jennifer Hare, Apoorva Pandey, David~S. Sayres, Thomas~F. Hanisco,
+  Andrea~E. Gordon, and Emily~N. Tinney.
+\newblock Extreme {Altitudes} of {Stratospheric} {Hydration} by {Midlatitude}
+  {Convection} {Observed} {During} the {DCOTSS} {Field} {Campaign}.
+\newblock {\em Geophysical Research Letters}, 50(18):e2023GL104914, 2023.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2023GL104914.
+
+\bibitem{wang_convectively_2023}
+Xun Wang, Yi~Huang, Zhipeng Qu, Paul~A. Vaillancourt, Man-Kong Yau, Jing Feng,
+  Jeffery Langille, and Adam Bourassa.
+\newblock Convectively {Transported} {Water} {Vapor} {Plumes} in the
+  {Midlatitude} {Lower} {Stratosphere}.
+\newblock {\em Journal of Geophysical Research: Atmospheres},
+  128(4):e2022JD037699, 2023.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022JD037699.
+
+\bibitem{bedka_above-anvil_2018}
+Kristopher Bedka, Elisa~M. Murillo, Cameron~R. Homeyer, Benjamin Scarino, and
+  Haiden Mersiovsky.
+\newblock The {Above}-{Anvil} {Cirrus} {Plume}: {An} {Important} {Severe}
+  {Weather} {Indicator} in {Visible} and {Infrared} {Satellite} {Imagery}.
+\newblock {\em Weather and Forecasting}, 33(5):1159--1181, October 2018.
+
+\bibitem{gordon_sensitivities_2022}
+Andrea~E. Gordon and Cameron~R. Homeyer.
+\newblock Sensitivities of {Cross}-{Tropopause} {Transport} in {Midlatitude}
+  {Overshooting} {Convection} to the {Lower} {Stratosphere} {Environment}.
+\newblock {\em Journal of Geophysical Research: Atmospheres},
+  127(13):e2022JD036713, 2022.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022JD036713.
+
+\bibitem{homeyer_development_2017}
+Cameron~R. Homeyer, Joel~D. Mcauliffe, and Kristopher~M. Bedka.
+\newblock On the {Development} of {Above}-{Anvil} {Cirrus} {Plumes} in
+  {Extratropical} {Convection}.
+\newblock {\em Journal of the atmospheric sciences}, 74(5):1617--1633, May
+  2017.
+
+\bibitem{wang_moisture_2003}
+Pao~K. Wang.
+\newblock Moisture plumes above thunderstorm anvils and their contributions to
+  cross-tropopause transport of water vapor in midlatitudes.
+\newblock {\em Journal of Geophysical Research: Atmospheres}, 108(D6), 2003.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2002JD002581.
+
+\bibitem{hassim_model_2010}
+M.~E.~E. Hassim and T.~P. Lane.
+\newblock A model study on the influence of overshooting convection on {TTL}
+  water vapour.
+\newblock {\em Atmospheric Chemistry and Physics}, 10(20):9833--9849, October
+  2010.
+
+\bibitem{qu_simulation_2020}
+Zhipeng Qu, Yi~Huang, Paul~A. Vaillancourt, Jason N.~S. Cole, Jason~A.
+  Milbrandt, Man-Kong Yau, Kaley Walker, and Jean de~Grandpré.
+\newblock Simulation of convective moistening of the extratropical lower
+  stratosphere using a numerical weather prediction model.
+\newblock {\em Atmospheric Chemistry and Physics}, 20(4):2143--2159, February
+  2020.
 
 \end{thebibliography}

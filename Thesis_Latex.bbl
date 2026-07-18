@@ -171,4 +171,16 @@ Richard Rotunno and George~H. Bryan.
   {Part} {II}: {Lee} {Vortices}.
 \newblock {\em Journal of Atmospheric Sciences}, February 2020.
 
+\bibitem{smith_severe_1985}
+Ronald~B. Smith.
+\newblock On {Severe} {Downslope} {Winds}.
+\newblock {\em Journal of Atmospheric Sciences}, December 1985.
+
+\bibitem{eckermann_momentum_2010}
+Stephen~D. Eckermann, John Lindeman, Dave Broutman, Jun Ma, and Zafer Boybeyi.
+\newblock Momentum {Fluxes} of {Gravity} {Waves} {Generated} by {Variable}
+  {Froude} {Number} {Flow} over {Three}-{Dimensional} {Obstacles}.
+\newblock {\em Journal of the Atmospheric Sciences}, 67(7):2260--2278, July
+  2010.
+
 \end{thebibliography}

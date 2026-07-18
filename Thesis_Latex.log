@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.7)  16 JUL 2026 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.7)  17 JUL 2026 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,14 +482,26 @@ Package hyperref Info: Link coloring ON on input line 64.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 
+l.126 
        [1] [2]
-<images/MMMFig12.12.png, id=110, 313.9228pt x 347.04657pt>
+<images/MMMFig12.12.png, id=119, 313.9228pt x 347.04657pt>
 File: images/MMMFig12.12.png Graphic file (type png)
 <use images/MMMFig12.12.png>
-Package pdftex.def Info: images/MMMFig12.12.png  used on input line 151.
+Package pdftex.def Info: images/MMMFig12.12.png  used on input line 153.
 (pdftex.def)             Requested size: 234.8775pt x 259.65941pt.
- [3] [4 <./images/MMMFig12.12.png>] (Thesis_Latex.bbl
+ [3] [4 <./images/MMMFig12.12.png>]
+<images/MMMFig12.13.png, id=154, 235.63031pt x 191.9672pt>
+File: images/MMMFig12.13.png Graphic file (type png)
+<use images/MMMFig12.13.png>
+Package pdftex.def Info: images/MMMFig12.13.png  used on input line 166.
+(pdftex.def)             Requested size: 234.8775pt x 191.35744pt.
+ [5 <./images/MMMFig12.13.png>]
+<images/EckermannFig1.png, id=168, 703.87968pt x 643.6547pt>
+File: images/EckermannFig1.png Graphic file (type png)
+<use images/EckermannFig1.png>
+Package pdftex.def Info: images/EckermannFig1.png  used on input line 175.
+(pdftex.def)             Requested size: 234.8775pt x 214.77365pt.
+ [6 <./images/EckermannFig1.png>] [7] (Thesis_Latex.bbl
 Underfull \hbox (badness 3895) in paragraph at lines 10--15
 \OT1/cmr/m/n/12 ter va-por.  \OT1/cmr/m/it/12 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/12 , 28(8):1551--1554, 2001.  []eprint:
  []
@@ -519,7 +531,7 @@ Underfull \hbox (badness 2111) in paragraph at lines 51--59
 \OT1/cmr/m/n/12 sphere.  \OT1/cmr/m/it/12 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/12 , 49(13):e2022GL099381, 2022.  []eprint:
  []
 
-[5]
+[8]
 Underfull \hbox (badness 1460) in paragraph at lines 67--76
 \OT1/cmr/m/n/12 Reem Han-nun, Jen-nifer Hare, Apoorva Pandey, David S. Sayres, Thomas F.
  []
@@ -559,26 +571,26 @@ Underfull \hbox (badness 6758) in paragraph at lines 111--117
 \OT1/cmr/m/it/12 Jour-nal of Geo-phys-i-cal Re-search: At-mo-spheres\OT1/cmr/m/n/12 , 108(D6), 2003.  []eprint:
  []
 
-[6]) [7] (Thesis_Latex.aux)
+[9]) [10] (Thesis_Latex.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Thesis_Latex.out' has not changed.
-(rerunfilecheck)             Checksum: 1AA3A8FE528BE71EC2D07E284503C9A7;358.
+(rerunfilecheck)             Checksum: A66344F0C14393343105D752C6C4679D;478.
  ) 
 Here is how much of TeX's memory you used:
- 11823 strings out of 474486
- 185660 string characters out of 5743284
+ 11851 strings out of 474486
+ 186286 string characters out of 5743284
  1935542 words of memory out of 5000000
- 33896 multiletter control sequences out of 15000+600000
+ 33916 multiletter control sequences out of 15000+600000
  564251 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,1946b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis_Latex.pdf (13 pages, 194987 bytes).
+<C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Thesis_Latex.pdf (16 pages, 266661 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -209,4 +209,14 @@ M.~L. Weisman and J.~B. Klemp.
   on {Vertical} {Wind} {Shear} and {Buoyancy}.
 \newblock {\em Monthly Weather Review}, 110(6):504--520, June 1982.
 
+\bibitem{deardorff_stratocumulus-capped_1980}
+James~W. Deardorff.
+\newblock Stratocumulus-capped mixed layers derived from a three-dimensional
+  model.
+\newblock {\em Boundary-Layer Meteorology}, 18(4):495--527, June 1980.
+
+\bibitem{meymaris_insitu_2022}
+Gregory Meymaris.
+\newblock {InSitu} {EDR} {Turbulence} {Reporting}, May 2022.
+
 \end{thebibliography}

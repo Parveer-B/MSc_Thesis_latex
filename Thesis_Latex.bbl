@@ -183,4 +183,30 @@ Stephen~D. Eckermann, John Lindeman, Dave Broutman, Jun Ma, and Zafer Boybeyi.
 \newblock {\em Journal of the Atmospheric Sciences}, 67(7):2260--2278, July
   2010.
 
+\bibitem{bryan_benchmark_2002}
+George~H. Bryan and J.~Michael Fritsch.
+\newblock A {Benchmark} {Simulation} for {Moist} {Nonhydrostatic} {Numerical}
+  {Models}.
+\newblock {\em Monthly Weather Review}, 130(12):2917--2928, December 2002.
+
+\bibitem{markowski_what_2020}
+Paul~M. Markowski.
+\newblock What is the {Intrinsic} {Predictability} of {Tornadic} {Supercell}
+  {Thunderstorms}?
+\newblock {\em Monthly Weather Review}, August 2020.
+
+\bibitem{maronga_parallelized_2015}
+B.~Maronga, M.~Gryschka, R.~Heinze, F.~Hoffmann, F.~Kanani-Sühring, M.~Keck,
+  K.~Ketelsen, M.~O. Letzel, M.~Sühring, and S.~Raasch.
+\newblock The {Parallelized} {Large}-{Eddy} {Simulation} {Model} ({PALM})
+  version 4.0 for atmospheric and oceanic flows: model formulation, recent
+  developments, and future perspectives.
+\newblock {\em Geoscientific Model Development}, 8(8):2515--2551, August 2015.
+
+\bibitem{weisman_dependence_1982}
+M.~L. Weisman and J.~B. Klemp.
+\newblock The {Dependence} of {Numerically} {Simulated} {Convective} {Storms}
+  on {Vertical} {Wind} {Shear} and {Buoyancy}.
+\newblock {\em Monthly Weather Review}, 110(6):504--520, June 1982.
+
 \end{thebibliography}

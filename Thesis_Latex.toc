@@ -3,3 +3,5 @@
 \contentsline {subsection}{\numberline {1.2}Mountain Waves}{3}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Current Work}{6}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Methods}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Parallelization Testing}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}File Compression}{12}{subsection.2.2}%

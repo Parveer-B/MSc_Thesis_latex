@@ -229,6 +229,14 @@ INPUT .\images\weird_wvpert_lines.png
 INPUT .\images\weird_wvpert_lines.png
 INPUT .\images\weird_wvpert_lines.png
 INPUT .\images\weird_wvpert_lines.png
+INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT .\images\Timingtests.png
+INPUT .\images\Timingtests.png
+INPUT .\images\Timingtests.png
+INPUT .\images\Timingtests.png
+INPUT .\images\Timingtests.png
+INPUT .\images\Timingtests.png
+INPUT .\images\Timingtests.png
 INPUT .\Thesis_Latex.bbl
 INPUT .\Thesis_Latex.bbl
 INPUT Thesis_Latex.bbl
@@ -256,3 +264,5 @@ INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb

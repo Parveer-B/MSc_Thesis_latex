@@ -219,4 +219,14 @@ James~W. Deardorff.
 Gregory Meymaris.
 \newblock {InSitu} {EDR} {Turbulence} {Reporting}, May 2022.
 
+\bibitem{feldspar_explanation_1997}
+Antaeus Feldspar.
+\newblock An {Explanation} of the `{Deflate}' {Algorithm}, August 1997.
+
+\bibitem{klower_compressing_2021}
+Milan Klöwer, Miha Razinger, Juan~J. Dominguez, Peter~D. Düben, and Tim~N.
+  Palmer.
+\newblock Compressing atmospheric data into its real information content.
+\newblock {\em Nature Computational Science}, 1(11):713--724, November 2021.
+
 \end{thebibliography}

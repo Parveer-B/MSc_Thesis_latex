@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.7)  19 JUL 2026 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.7)  21 JUL 2026 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -484,48 +484,59 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.126 
        [1] [2]
-<images/MMMFig12.12.png, id=142, 313.9228pt x 347.04657pt>
+<images/MMMFig12.12.png, id=146, 313.9228pt x 347.04657pt>
 File: images/MMMFig12.12.png Graphic file (type png)
 <use images/MMMFig12.12.png>
 Package pdftex.def Info: images/MMMFig12.12.png  used on input line 153.
 (pdftex.def)             Requested size: 234.8775pt x 259.65941pt.
  [3] [4 <./images/MMMFig12.12.png>]
-<images/MMMFig12.13.png, id=177, 235.63031pt x 191.9672pt>
+<images/MMMFig12.13.png, id=181, 235.63031pt x 191.9672pt>
 File: images/MMMFig12.13.png Graphic file (type png)
 <use images/MMMFig12.13.png>
 Package pdftex.def Info: images/MMMFig12.13.png  used on input line 166.
 (pdftex.def)             Requested size: 234.8775pt x 191.35744pt.
  [5 <./images/MMMFig12.13.png>]
-<images/EckermannFig1.png, id=191, 703.87968pt x 643.6547pt>
+<images/EckermannFig1.png, id=195, 703.87968pt x 643.6547pt>
 File: images/EckermannFig1.png Graphic file (type png)
 <use images/EckermannFig1.png>
 Package pdftex.def Info: images/EckermannFig1.png  used on input line 175.
 (pdftex.def)             Requested size: 234.8775pt x 214.77365pt.
  [6 <./images/EckermannFig1.png>]
-<images/initialcond.pdf, id=207, 492.23268pt x 349.96889pt>
+<images/initialcond.pdf, id=211, 492.23268pt x 349.96889pt>
 File: images/initialcond.pdf Graphic file (type pdf)
 <use images/initialcond.pdf>
 Package pdftex.def Info: images/initialcond.pdf  used on input line 192.
 (pdftex.def)             Requested size: 234.8775pt x 166.99522pt.
  [7 <./images/initialcond.pdf>]
-<images/weirdlines.pdf, id=225, 1394.18498pt x 221.93149pt>
+<images/weirdlines.pdf, id=231, 1394.18498pt x 221.93149pt>
 File: images/weirdlines.pdf Graphic file (type pdf)
 <use images/weirdlines.pdf>
 Package pdftex.def Info: images/weirdlines.pdf  used on input line 201.
 (pdftex.def)             Requested size: 469.75502pt x 74.77841pt.
  [8 <./images/weirdlines.pdf>]
-<images/weird_wvpert_lines.png, id=247, 1112.2353pt x 711.8595pt>
+<images/weird_wvpert_lines.png, id=254, 1112.2353pt x 711.8595pt>
 File: images/weird_wvpert_lines.png Graphic file (type png)
 <use images/weird_wvpert_lines.png>
 Package pdftex.def Info: images/weird_wvpert_lines.png  used on input line 213.
 (pdftex.def)             Requested size: 469.75502pt x 300.6517pt.
  [9 <./images/weird_wvpert_lines.png>] [10]
-<images/Timingtests.png, id=271, 509.5035pt x 383.5128pt>
+<images/Timingtests.png, id=278, 509.5035pt x 383.5128pt>
 File: images/Timingtests.png Graphic file (type png)
 <use images/Timingtests.png>
 Package pdftex.def Info: images/Timingtests.png  used on input line 231.
 (pdftex.def)             Requested size: 328.82707pt x 247.51308pt.
- [11 <./images/Timingtests.png>] [12] (Thesis_Latex.bbl
+ [11] [12 <./images/Timingtests.png>]
+<images/qvpertnosymlog.png, id=297, 13995.28625pt x 8898.24374pt>
+File: images/qvpertnosymlog.png Graphic file (type png)
+<use images/qvpertnosymlog.png>
+Package pdftex.def Info: images/qvpertnosymlog.png  used on input line 271.
+(pdftex.def)             Requested size: 469.75502pt x 298.57162pt.
+<images/symlog_func.png, id=302, 1162.8243pt x 313.8927pt>
+File: images/symlog_func.png Graphic file (type png)
+<use images/symlog_func.png>
+Package pdftex.def Info: images/symlog_func.png  used on input line 280.
+(pdftex.def)             Requested size: 469.75502pt x 126.80493pt.
+ [13] [14 <./images/qvpertnosymlog.png (PNG copy)>] [15 <./images/symlog_func.png>] (Thesis_Latex.bbl
 Underfull \hbox (badness 3895) in paragraph at lines 10--15
 \OT1/cmr/m/n/12 ter va-por.  \OT1/cmr/m/it/12 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/12 , 28(8):1551--1554, 2001.  []eprint:
  []
@@ -555,7 +566,7 @@ Underfull \hbox (badness 2111) in paragraph at lines 51--59
 \OT1/cmr/m/n/12 sphere.  \OT1/cmr/m/it/12 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/12 , 49(13):e2022GL099381, 2022.  []eprint:
  []
 
-[13]
+[16]
 Underfull \hbox (badness 1460) in paragraph at lines 67--76
 \OT1/cmr/m/n/12 Reem Han-nun, Jen-nifer Hare, Apoorva Pandey, David S. Sayres, Thomas F.
  []
@@ -595,7 +606,7 @@ Underfull \hbox (badness 6758) in paragraph at lines 111--117
 \OT1/cmr/m/it/12 Jour-nal of Geo-phys-i-cal Re-search: At-mo-spheres\OT1/cmr/m/n/12 , 108(D6), 2003.  []eprint:
  []
 
-[14] [15]) [16] (Thesis_Latex.aux)
+[17] [18]) [19] (Thesis_Latex.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -604,17 +615,17 @@ Package rerunfilecheck Info: File `Thesis_Latex.out' has not changed.
 (rerunfilecheck)             Checksum: CFBB606C461D726A29D6057094792AAB;871.
  ) 
 Here is how much of TeX's memory you used:
- 11915 strings out of 474486
- 187772 string characters out of 5743284
- 1935542 words of memory out of 5000000
- 33960 multiletter control sequences out of 15000+600000
+ 11955 strings out of 474486
+ 188604 string characters out of 5743284
+ 1936542 words of memory out of 5000000
+ 33987 multiletter control sequences out of 15000+600000
  564420 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,2265b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis_Latex.pdf (22 pages, 1646321 bytes).
+ 75i,9n,79p,2265b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Thesis_Latex.pdf (25 pages, 4093797 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

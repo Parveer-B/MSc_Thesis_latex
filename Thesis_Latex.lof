@@ -4,4 +4,6 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces The first timestep of our "realistic" simulations.}}{7}{figure.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Lines seen in with noise and open radiative boundary conditions.}}{8}{figure.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Lines in water vapour perturbation for non-interpolated sounding.}}{9}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Time required run a 10 minute CM1 supercell for different output types.}}{11}{figure.7}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Time required run a 10 minute CM1 supercell for different output types.}}{12}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Output for compressed QVpert with no symlog applied.}}{14}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces The Symlog function.}}{15}{figure.9}%

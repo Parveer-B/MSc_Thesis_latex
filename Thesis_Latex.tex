@@ -155,7 +155,7 @@ Here, $D$ is the fluid depth and $h$ is the obstacle height. Equation \ref{eq:sh
     \label{fig:FrMountain}
 \end{figure}
 
-where $Fr$ is the Froude number, and in this case is $U/gD$. From equation \ref{eq:froude_depth_relation}, we can see that if the upstream Froude number is less than one (middle of Fig \ref{fig:FrMountain}), mountain height increases the fluid depth must decrease. As fluid depth decreases, the fluid speed increases over the mountain by mass continuity. Similarly, for an upstream Froude number over one (top of Fig \ref{fig:FrMountain}), the fluid acts like a ball going over a hill, slowing down and thickening as it goes over the mountain before accelerating down the other side. However, in a certain regime of subcritical upstream Froude number, with a tall enough mountain (see Fig 2.9 of Baines (2022) \cite{baines_topographic_2022}), the fluid accelerates enough to let the Froude number transition from subcritical to supercritical over the mountain (bottom of Fig \ref{fig:FrMountain}). This causes the fluid accelerating all the way over and down the mountain, creating a downslope windstorm. The fluid then recovers to the ambient flow in the form of a turbulent hydraulic jump. However, this Froude number definition is suspect at best for an atmospheric context \cite{markowski_mesoscale_2011} as the depth of the layer is not well defined for stratified flows. 
+where $Fr$ is the Froude number, and in this case is $U/gD$. From equation \ref{eq:froude_depth_relation}, we can see that if the upstream Froude number is less than one (middle of Fig \ref{fig:FrMountain}), mountain height increases the fluid depth must decrease. As fluid depth decreases, the fluid speed increases over the mountain by mass continuity. Similarly, for an upstream Froude number over one (top of Fig \ref{fig:FrMountain}), the fluid acts like a ball going over a hill, slowing down and thickening as it goes over the mountain before accelerating down the other side. However, in a certain regime of subcritical upstream Froude number, with a tall enough mountain (see Fig 2.9 of Baines (2022) \cite{baines_topographic_2022}), the fluid accelerates enough to let the Froude number transition from subcritical to supercritical over the mountain (bottom of Fig \ref{fig:FrMountain}). This causes the fluid accelerating all the way over and down the mountain, creating a downslope windstorm. The fluid then recovers to the ambient flow in the form of a turbulent hydraulic jump. However, this Froude number definition is suspect at best for an atmospheric context \cite{markowski_mesoscale_2011} as the depth of the layer is not well defined for stratified flows. Thus, it is difficult to predict a jump when we have no layer a priori.
 
 In a simulation of two layer flow with a transition layer past topography, Rotunno and Bryan (2018) \cite{rotunno_numerical_2018} \cite{rotunno_numerical_2020} show that steepening of leeside isentropes baroclinically produces vorticity. This baroclinically produced vorticity is transported further downstream where it causes the isentropes to overturn. This isentropic overturning causes a location of local instability, the wave breaks, and the transition layer mixes in with itself forming a hydraulic jump. The results of this simple surface simulation (figure 3e of \cite{rotunno_numerical_2018}) shows a remarkable resemblance to the result given in O'Neill et al (2021) (\cite{oneill_hydraulic_2021} fig 2B). This demonstrates that this surface mountain wave theory is indeed quite applicable to mountain waves in the sky.
 
@@ -194,7 +194,7 @@ For this work, George Bryan's Cloud Model 1 (CM1) \cite{bryan_benchmark_2002} wa
     \label{fig:initialcond}
 \end{figure}
 
-While the model setup of O'Neill et al (2021) \cite{oneill_hydraulic_2021} was mostly followed, a number of modifications were made to attempt to increase the realism. First, similarly to Gordon and Homeyer (2022) \cite{gordon_sensitivities_2022} instead of updraft nudging, a thermal bubble in the center of the domain was used to proxy a more realistic form of convective initiation. This is likely more physical due to forming the updraft indirectly via a temperature perturbation, rather than directly via updraft nudging. However unlike Gordon and Homeyer (2022) \cite{gordon_sensitivities_2022}, the maximum potential temperature perturbation of the bubble was set to 0.25K, a quarter of the default value, which is hopefully more representative of how convection is actually initiated in the atmosphere. Additionally, as true atmospheres are not horizontally homogeneous, 0.25K magnitude noise was added to the potential temperature field in the first time step, similar to Markowski (2020) \cite{markowski_what_2020}. This allows some amount of turbulence to develop in the system \cite{markowski_what_2020}.  The magnitude of the noise was set to match the magnitude of the bubble. A portion of the first timestep 1km up in these simulations can be seen in \ref{fig:initialcond}, with the red area in the centre being the thermal bubble.
+While the model setup of O'Neill et al (2021) \cite{oneill_hydraulic_2021} was mostly followed, a number of modifications were made to attempt to increase the realism. Our namelist file can be found here: \url{https://github.com/Parveer-B/Useful_codes/blob/main/exp53namelist.input}. First, similarly to Gordon and Homeyer (2022) \cite{gordon_sensitivities_2022} instead of updraft nudging, a thermal bubble in the center of the domain was used to proxy a more realistic form of convective initiation. This is likely more physical due to forming the updraft indirectly via a temperature perturbation, rather than directly via updraft nudging. However unlike Gordon and Homeyer (2022) \cite{gordon_sensitivities_2022}, the maximum potential temperature perturbation of the bubble was set to 0.25K, a quarter of the default value, which is hopefully more representative of how convection is actually initiated in the atmosphere. Additionally, as true atmospheres are not horizontally homogeneous, 0.25K magnitude noise was added to the potential temperature field in the first time step, similar to Markowski (2020) \cite{markowski_what_2020}. This allows some amount of turbulence to develop in the system \cite{markowski_what_2020}.  The magnitude of the noise was set to match the magnitude of the bubble. A portion of the first timestep 1km up in these simulations can be seen in \ref{fig:initialcond}, with the red area in the centre being the thermal bubble.
 
 \begin{figure}[ht]
     \centering %center the image
@@ -237,13 +237,78 @@ The results for the time CM1 requires to run 10 minute of our supercell simulati
 
 All in all, in order to avoid the hassle of having a large number of output files, we decided to run our 150m horizontal grid spacing runs with two Trillium nodes and the standard grADS output. However, for the 75m simulation this would cause us to hit the memory limit along with being extremely slow. Thus for that simulation we used 20 trillium nodes outputted in the parallel grADS format.
 
-
-%discuss types of file output
-%Give my output
-%discuss my choices for each sim type, discuss memory constraints
-%note one simulation per data point -> high variance causes odd results
-
 \subsection{File Compression}
+With file sizes for our data being extremely large, data compression is a necessary tool for storing our model output on Trillium without running into storage constraints. There are two main compression types: lossless and lossy. Lossless compression involves trying to find patterns in the output. Then using these patterns, the same information can be saved, just encoded with less bits. For example if a variable is zero in most of the domain (like cloud ice), this correlation can be recognized and the large string of zeros in the data can be virtually completely compressed. Additionally, common outputs (like zero) can be identified and stored with less bits than more common outputs with a prefix code. An intuitive description for the zlib compression algorithm used can be found in Feldspar (1997) \cite{feldspar_explanation_1997}. Pure lossless compression allows up to obtain compression ratios of about two in our simulations.
+
+However, lossless compression is only half of the story. Our data is stored in numpy's float32 format which holds eight exponent bits (allowing numbers over 1e38!) and 23 mantissa bits, allowing around 7 significant digits in scientific notation. This precision is well beyond what we require in our analysis and thus we are ok with losing some amount of information in order to achieve higher compression ratios. To achieve this we apply lossy compression. For a given offset and scale factor, lossy compression takes our data and maps it to an integer using equation \ref{eq:lossyconvert}.
+
+\begin{equation}
+\label{eq:lossyconvert}
+\text{Integer Value} = \text{round}\left( \frac{\text{Original Decimal Value} - \text{offset}}{\text{scale}} \right)
+\end{equation}
+
+Essentially, this can be thought of as taking our data and binning it into a specified number of bins.  This is accomplished by setting the scale and offset in equation \ref{eq:lossyconvert} as in equations \ref{eq:scale} and \ref{eq:offset}.
+
+\begin{equation}
+\label{eq:scale}
+\text{scale} = \frac{\text{var(max)} - \text{var(min)}}{\text{\# of bins}}
+\end{equation}
+
+\begin{equation}
+\label{eq:offset}
+\text{offset} = \text{var(min)} + \left( \text{scale} \times \frac{\text{\# of bins}}{2} \right)
+\end{equation}
+
+Here $\text{var(min)}$ and $\text{var(max)}$ represent the maximum and minimum values of a given variable in that dataset. For this setup, our data uncertainty is given by:
+
+\begin{equation}
+\label{eq:nosymuncertainty}
+\text{Uncertainty} = \pm \frac{\text{var(max)} - \text{var(min)}}{2 * \text{\# of bins}}
+\end{equation}
+
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/qvpertnosymlog.png}
+    \caption[Output for compressed QVpert with no symlog applied.]{Model output for water vapour perturbation with lossy compression and a different number of bins.}
+    \label{fig:qvpert_nosymlog}
+\end{figure}
+
+From equation \ref{eq:nosymuncertainty}, it is clear that more bins leads to lower uncertainty. However the more integers/bins we store, the more bits are required to store each value and the less patterns the compression algorithm is able to find, leading to worse compression ratios. However, from the above it is clear that the uncertainty of our data is an absolute uncertainty, instead of a relative uncertainty. This is problematic, in instances where the spread in a variable over the entire dataset is large, but we care about small perturbations in our analysis. This can be seen plainly in figure \ref{fig:qvpert_nosymlog}. In this dataset, the qvpert variable ranges from -12221 ppmv to 6304 ppmv, leading to uncertainties of about 1 ppmv, 18 ppmv and 145 ppmv for 16384, 1024 and 128 bins respectively when using equation \ref{eq:nosymuncertainty}. For 128 bins, the 145 ppmv uncertainty spans the entire variable at this altitude, removing any semblance of the feature. When there are 16384 total bins, only about 10 of these bins are present in the image causing the image to be quite blocky. A similar blockiness can be seen in Klöwer et al. (2021) \cite{klower_compressing_2021} in their Fig.3 when there are lower retained information percentages.
+
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/symlog_func.png}
+    \caption[The Symlog function.]{The Symlog function with a (left) linear scale on the and (right) log scale with only positive values included.}
+    \label{fig:symlog}
+\end{figure}
+
+We resolved this problem by applying a symlog function to our data before binning and compressing it. The function is as follows and can be seen in figure \ref{fig:symlog}. The approximate uncertainty of a variable after applying symlog is given by
+
+\begin{equation}
+\label{eq:symlogfunc}
+f(x) = \begin{cases} 
+-\ln(-x + 1) & \text{if } x < 0 \\ 
+\ln(x + 1) & \text{if } x \ge 0 
+\end{cases}
+\end{equation}
+
+By applying symlog function we essentially convert our absolute uncertainty to a relative uncertainty. The uncertainty on our data is now given approximately by equation \ref{eq:symuncertainty} for data with a magnitude over one. In equation \ref{eq:symuncertainty} $f()$ represents the symlog function while x represents the data value.
+
+\begin{equation}
+\label{eq:symuncertainty}
+\text{Uncertainty} = \pm \frac{f(\text{var(max)}) - f(\text{var(min)})}{2 * (\text{\# of bins})} * |x|
+\end{equation}
+
+This argument breaks down for smaller data values however. If we imagine binning the data by placing equally spaced horizontal lines on the RHS of figure \ref{fig:symlog}, we can see that as the function flat-lines at about 0.1 the number of bins per order of magnitude decreases dramatically. Variables such as water vapour perturbation are stored by default in units of kg/kg, causing the magnitude of the values stored to generally be well below zero. To remedy this, all of our water variables per converted to ppmv before applying the Symlog function.
+
+Additionally using the Symlog function isn't useful if our data isn't distributed about zero. For example, the upper level winds, which have a median value on the order of 30 m/s would have a sizeable uncertainty and thus perturbations about that mean state would likely not be noticeable after compression. While we could have added an offset to the Symlog function to resolve this, we felt that this might add another barrier to other users who may wish to access our data. Hence, we decided not to use Symlog on variables of this type before compression, adding a flag to the variable metadata to indicate this. The winds don't have extreme values on the same order as those for water vapour perturbation, and thus the bins even without Symlog are quite small.
+%note that I could've added it with an offset for the winds, but adding an offset may have made it confusing for other users and I wanted to decrease complexity -> winds don't vary as much so the above problem (cite the figure) isn't as prevalent
+
+
+
+%uncertainty of lossy compression
+
+
 
 \newpage
 \bibliographystyle{unsrt} % You can use other styles like 'unsrt', 'alpha', etc.

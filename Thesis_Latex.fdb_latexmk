@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis_Latex"] 1784511114.13656 "Thesis_Latex.aux" "Thesis_Latex.bbl" "Thesis_Latex" 1784512497.47259 0
-  "./references.bib" 1784483296 230077 777890ee2189f61a92cb5bd5e32dd2b8 ""
+["bibtex Thesis_Latex"] 1784663218.61081 "Thesis_Latex.aux" "Thesis_Latex.bbl" "Thesis_Latex" 1784663664.14179 0
+  "./references.bib" 1784566942 230456 0485ebd5c7037a956a8e0601485b7f28 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "Thesis_Latex.aux" 1784512496 6711 779a527127ebc88fa2fd98991a1736be "pdflatex"
+  "Thesis_Latex.aux" 1784663662 7737 20779e39e0d2f2e1f3190e51deb23cd4 "pdflatex"
   (generated)
   "Thesis_Latex.bbl"
   "Thesis_Latex.blg"
   (rewritten before read)
-["pdflatex"] 1784512495.51376 "c:/Users/Lenovo/OneDrive - University of Toronto/Desktop/Summer Research & MSc 2025-2026/Thesis/MSc_Thesis_latex/Thesis_Latex.tex" "Thesis_Latex.pdf" "Thesis_Latex" 1784512497.47316 0
+["pdflatex"] 1784663660.51163 "c:/Users/Lenovo/OneDrive - University of Toronto/Desktop/Summer Research & MSc 2025-2026/Thesis/MSc_Thesis_latex/Thesis_Latex.tex" "Thesis_Latex.pdf" "Thesis_Latex" 1784663664.14246 0
   "C:/Users/Lenovo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1776441599 164858 1926c8d7bd1823f0c8393a5c0272d2d9 ""
   "C:/Users/Lenovo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1751911864 24225517 35c893e9983a940e039281d22656711b ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -30,6 +30,7 @@
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt12.tfm" 1136765053 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -106,19 +107,21 @@
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Thesis_Latex.aux" 1784512496 6711 779a527127ebc88fa2fd98991a1736be "pdflatex"
-  "Thesis_Latex.bbl" 1784511114 9964 661656c485e616399fac202a85fbebf0 "bibtex Thesis_Latex"
-  "Thesis_Latex.lof" 1784512496 866 90e77b0b0ffbcdf91bd028806bf5ea48 "pdflatex"
-  "Thesis_Latex.lot" 1784512496 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Thesis_Latex.out" 1784512496 871 cfbb606c461d726a29d6057094792aab "pdflatex"
-  "Thesis_Latex.tex" 1784512494 33529 3bd553844a9bdb2d6a952278109fab5e ""
-  "Thesis_Latex.toc" 1784512496 541 aa21a4bb7dfcefc030f6d7f73279031a "pdflatex"
-  "c:/Users/Lenovo/OneDrive - University of Toronto/Desktop/Summer Research & MSc 2025-2026/Thesis/MSc_Thesis_latex/Thesis_Latex.tex" 1784512494 33529 3bd553844a9bdb2d6a952278109fab5e ""
+  "Thesis_Latex.aux" 1784663662 7737 20779e39e0d2f2e1f3190e51deb23cd4 "pdflatex"
+  "Thesis_Latex.bbl" 1784663218 10374 22be06575d4e1d0bb14b236fbfc6b06e "bibtex Thesis_Latex"
+  "Thesis_Latex.lof" 1784663662 1080 2af94df23f1c81dab19a540be8e48ef6 "pdflatex"
+  "Thesis_Latex.lot" 1784663661 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Thesis_Latex.out" 1784663662 871 cfbb606c461d726a29d6057094792aab "pdflatex"
+  "Thesis_Latex.tex" 1784663659 40558 57445679d50be4ccf72f9a1074548d71 ""
+  "Thesis_Latex.toc" 1784663662 541 ae88316a661936a15f19ac6a82633c3d "pdflatex"
+  "c:/Users/Lenovo/OneDrive - University of Toronto/Desktop/Summer Research & MSc 2025-2026/Thesis/MSc_Thesis_latex/Thesis_Latex.tex" 1784663659 40558 57445679d50be4ccf72f9a1074548d71 ""
   "images/EckermannFig1.png" 1784331138 67250 bdf99852732294fb8ba5d8efbe86a5ca ""
   "images/MMMFig12.12.png" 1784226871 32389 8acaa4080c6c2d0108e731e3bd153406 ""
   "images/MMMFig12.13.png" 1784328533 13489 3c34eaaaca9489ce651aa5fcdbb17e4c ""
   "images/Timingtests.png" 1784510964 158602 e255b93425785c9135834fb8af2ded72 ""
   "images/initialcond.pdf" 1784398673 437300 8198bc26bacbe10d97f9f73831d53989 ""
+  "images/qvpertnosymlog.png" 1784573204 2334207 7db1330b327c1c92ad9d1c6b097d9767 ""
+  "images/symlog_func.png" 1784660254 98334 21e27ae7d0e4cf1c11df4ec246e197fa ""
   "images/weird_wvpert_lines.png" 1784418427 430195 a865ca56f3d13de3c9ecb6a151722e24 ""
   "images/weirdlines.pdf" 1784402254 445464 207c66c91c6d210ea8282376f45c9a22 ""
   (generated)

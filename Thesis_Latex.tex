@@ -301,12 +301,95 @@ By applying symlog function we essentially convert our absolute uncertainty to a
 
 This argument breaks down for smaller data values however. If we imagine binning the data by placing equally spaced horizontal lines on the RHS of figure \ref{fig:symlog}, we can see that as the function flat-lines at about 0.1 the number of bins per order of magnitude decreases dramatically. Variables such as water vapour perturbation are stored by default in units of kg/kg, causing the magnitude of the values stored to generally be well below zero. To remedy this, all of our water variables per converted to ppmv before applying the Symlog function.
 
-Additionally using the Symlog function isn't useful if our data isn't distributed about zero. For example, the upper level winds, which have a median value on the order of 30 m/s would have a sizeable uncertainty and thus perturbations about that mean state would likely not be noticeable after compression. While we could have added an offset to the Symlog function to resolve this, we felt that this might add another barrier to other users who may wish to access our data. Hence, we decided not to use Symlog on variables of this type before compression, adding a flag to the variable metadata to indicate this. The winds don't have extreme values on the same order as those for water vapour perturbation, and thus the bins even without Symlog are quite small.
+Additionally using the Symlog function isn't useful if our data isn't distributed about zero. For example, the upper level winds, which have a median value on the order of 30 m/s would have a sizeable uncertainty and thus perturbations about that mean state would likely not be noticeable after compression. While we could have added an offset to the Symlog function to resolve this, we felt that this might add another barrier to other users who may wish to access our data. Additionally, the winds don't have extreme values on the same order as those for water vapour perturbation, and thus the bins even without Symlog are quite small. Hence, we decided not to use Symlog on variables of this type before compression, adding a flag to the variable metadata to indicate this.
 %note that I could've added it with an offset for the winds, but adding an offset may have made it confusing for other users and I wanted to decrease complexity -> winds don't vary as much so the above problem (cite the figure) isn't as prevalent
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/qvpertwsymlog.png}
+    \caption[Output for compressed QVpert with symlog applied.]{Model output for water vapour perturbation with lossy compression after applied symlog and a different number of bins.}
+    \label{fig:qvpert_symlog}
+\end{figure}
+
+The immediate improvement after applying symlog can be seen immediately when comparing figure \ref{fig:qvpert_symlog} to figure \ref{fig:qvpert_nosymlog}. Now, even for only 128 bins there is no visible blockiness and the field looks visually identical to the field when there is no compression. This is in stark contrast to no symlog (figure \ref{fig:qvpert_nosymlog}) where 128 bins showed a constant background value for this level of water vapour.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Input File} & \textbf{Input Size} & \textbf{Bins} & \textbf{Output Size} & \textbf{Compression \%} \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 65536 & 8.89 GB & 84.2\% \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 16384 & 6.27 GB & 88.9\% \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 4096  & 3.62 GB & 93.6\% \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 2048  & 2.70 GB & 95.2\% \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 1024  & 1.94 GB & 96.6\% \\ \hline
+\end{tabular}
+\caption{File Compression by Number of Bins}
+\label{tab:compression_metrics}
+\end{table}
+
+Symlog compressed data was then testing by compressing CM1's "\_s" 120 minute output file for one of our test runs. This output file included the pressure, potential temperature and water vapour perturbations as well as the winds in all three dimensions (symlog was not applied to these). The output file size results can be seen in \ref{tab:compression_metrics}, but it should be noted that increasing the number of bins also increases the time required to compress the files. These results show that the compression does significantly improve as we decrease the number of bins, with the file size for 1024 bins being almost five times smaller than that for 65536 bins.
+
+
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/wv_logscl_bincompare.png}
+    \caption[Log scale water vapour perturbation with different numbers of bins.]{Log scale water vapour perturbation with symlog lossy compression and a different number of bins. White values indicate negative perturbation values, which do not appear on the log scale.}
+    \label{fig:qvpert_logscale_symlog}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/uvel_bincomp.png}
+    \caption[U velocity field away from the storm with different numbers of bins.]{The U velocity field at a distance far away from the center of the storm. Non-symlog compressed results shown for different numbers of bins.}
+    \label{fig:uvelbincomp}
+\end{figure}
+
+We conducted additional tests to differentiate between the results for different numbers of bins. This can be seen in figure \ref{fig:qvpert_logscale_symlog}. Here in the uncompressed file, there is a large amount of information at the 10e-6 ppmv level (or the part per trillion level) which is lost at any level of compression. It is clear however that losing information at this level is unlikely to have any relevance as the perturbation of water vapour (or any molecule really) is unlikely to have any remote impact towards our analysis. Analyzing further, for 65536 bins we see a very complete water vapour injection feature including some features at about the part per billion level. The surrounding part per billion injection is lost once we move down to 16384 bins, but the main feature is still present almost in it's entirety including the small detached oval at about 229km in y. However, it does lose the smaller semicircle just below this oval at the edge of the domain. 4096 bins however essentially loses the continuity of this feature and the little oval feature is now gone. As we decrease down to 1024 bins, most of the feature has disappeared. 
+
+The non-symlog'd u-interp field far away from the storm can be seen in figure \ref{fig:uvelbincomp}. Here differences in the field are caused by the added model noise in potential temperature which has been allowed to evolve for 120 minutes. Thus, this sort of field is representative for what we would see for the background wind fields anywhere in the domain. Once again see the quality of the output degrading as we decrease the number of bins. 65536 bins is virtually indistinguishable from the original field while 16384 bins displays some level of blockiness while still being a good representation of the uncompressed field. However as we decrease the number of bins further, the number of bins which exist within the image range decrease dramatically, just as in figure \ref{fig:qvpert_nosymlog}. 2048 bins just leaves 3 bins in the range of the image while 1024 has just 2 making those two images completely fail to represent the uncompressed image.
+
+All in all, we decided to proceed with 16384 bins for our compression. We believe that this value optimizes the tradeoff of providing a substantial file size reduction (89\% for the test case in table \ref{tab:compression_metrics}) while keeping the important features of the uncompressed images (as seen in figures \ref{fig:qvpert_logscale_symlog} and \ref{fig:uvelbincomp}).
+
+Another factor to consider is the complexity level with which zlib completes its lossless compression. The complexity level specifies the depth in which zlib will go in order to find correlations to reduce file size. This was tested for lossy compression (no symlog) with 65536 bins and 3 different complexity levels. The results are shown in table \ref{tab:clevtesting}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Input file} & \textbf{Input size} & \textbf{complevel} & \textbf{Output size} & \textbf{Compression (\%)} & \textbf{Time} \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 1 & 6.19 GB & 89.00\% & 8 min \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 4 & 5.55 GB & 90.13\% & 9 min \\ \hline
+cm1out\_000025\_s.nc & 56.25 GB & 6 & 5.25 GB & 90.67\% & 17 min \\ \hline
+\end{tabular}
+\caption{Compression efficacy for different complexity levels}
+\label{tab:clevtesting}
+\end{table}
+
+From table \ref{tab:clevtesting} it is clear that complexity level has only marginal effects towards the amount of compression. However, increasing it even marginally from 4 to 6 almost doubled the time required to compress the file. It also increases the time taken to load the data (not shown). Thus once again we decided to choose the middle ground with a complexity level of 4 to strike a balance between compression amount and the time taken.
+
+The final compression code used can be found here: \url{https://github.com/Parveer-B/Useful_codes/blob/main/compress_symlog.py}, allowing for a user selected number of bins via the variable "scalefac" and complexity level through the variable "complev". Additionally the user can select the number of vertical chunks the data is divided into when compressing. This is incredibly useful, as for large datasets the RAM usage when compressing can get quite high (especially if one wishes to compress multiple files in parallel). However, if there are too many chunks the program can become incredibly slow. We found that six vertical chunks allowed for a good balance.
+
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/TKElogsc_comptst.png}
+    \caption[Evaluating compression for Stratospheric TKE in a log scale.]{Log scale TKE for uncompressed data and symlog lossy compressed data with 16384 bins. White values indicate a TKE of zero.}
+    \label{fig:TKE_logscale_symlog}
+\end{figure}
+
+We would like to note that there are some deficiencies with this approach. For example, examining the TKE field in \ref{fig:TKE_logscale_symlog} we can see that there is turbulence about 200 metres higher than that which is resolved in the compressed file. Despite this turbulence being very low in magnitude (the fields look identical without the log scale), this information about aloft turbulence is lost after compression. However, it is important to note that the TKE transport equation from  Deardorff (1980) \cite{deardorff_stratocumulus-capped_1980} is heavily parameterized (as all of them are). Thus, this turbulence injection may not represent real physics. Additionally, the model has no resolved turbulence below the 1e-10 level. This is in itself a relatively arbitrary cutoff. By compressing, one could argue that we have just shifted this arbitrary cutoff to another arbitrary cutoff of higher magnitude.
+
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/prspert_comptst.png}
+    \caption[Evaluating compression for pressure perturbation away from the storm.]{Pressure perturbation field away from the storm for uncompressed data and symlog lossy compressed data with 16384 bins}
+    \label{fig:prspert_comptst}
+\end{figure}
+
+Another clear deficiency can be seen in \ref{fig:prspert_comptst}. Pressure perturbation varies over a range of 1500 Pa for this timestep. Thus, a small range of values over a sliced domain where that value range is not about zero can cause blockiness in our visuals. However, as symlog is logarithmic, this blockiness is not nearly as noticeable as it would have been without symlog in this region. Using equation \ref{eq:nosymuncertainty}, there would only be two bins in this region without it while many more are seen in figure \ref{fig:prspert_comptst}.
 
 
 
-%uncertainty of lossy compression
+%all we're doing is shifting the arbitrary cutoff
 
 
 

@@ -229,4 +229,9 @@ Milan Klöwer, Miha Razinger, Juan~J. Dominguez, Peter~D. Düben, and Tim~N.
 \newblock Compressing atmospheric data into its real information content.
 \newblock {\em Nature Computational Science}, 1(11):713--724, November 2021.
 
+\bibitem{orf_lossy_2022}
+Leigh Orf and Kelton Halbert.
+\newblock Lossy compression in violent thunderstorm simulations: {Lessons}
+  learned and future goals, March 2022.
+
 \end{thebibliography}

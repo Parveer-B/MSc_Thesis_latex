@@ -385,12 +385,31 @@ We would like to note that there are some deficiencies with this approach. For e
     \label{fig:prspert_comptst}
 \end{figure}
 
-Another clear deficiency can be seen in \ref{fig:prspert_comptst}. Pressure perturbation varies over a range of 1500 Pa for this timestep. Thus, a small range of values over a sliced domain where that value range is not about zero can cause blockiness in our visuals. However, as symlog is logarithmic, this blockiness is not nearly as noticeable as it would have been without symlog in this region. Using equation \ref{eq:nosymuncertainty}, there would only be two bins in this region without it while many more are seen in figure \ref{fig:prspert_comptst}.
+Another clear deficiency can be seen in \ref{fig:prspert_comptst}. Pressure perturbation varies over a range of 1500 Pa for this timestep. Thus, a small range of values over a sliced domain where that value range is not about zero can cause blockiness in our visuals. However, as symlog is logarithmic, this blockiness is not nearly as noticeable as it would have been without symlog in this region. Using equation \ref{eq:nosymuncertainty}, there would only be two bins in this region without it despite there being many more in figure \ref{fig:prspert_comptst}.
+
+\begin{figure}[ht]
+    \centering %center the image
+    \includegraphics[width=\textwidth]{images/compfilesizes.png}
+    \caption[Compressed file size over time.]{Compressed file size for the "\_s" CM1 output file (containing perturbations of water vapour, potential temperature and pressure as well as the three winds) and the "\_w" file (which just has TKE).}
+    \label{fig:comp_filesizes}
+\end{figure}
+
+As it turns out, the file sizes of the compressed data can actually provide us with some interesting information about our storms. In the first output timestep (t = 0) all the variables are homogeneous apart from theta perturbation (due to the added noise). Thus the zlib algorithm is able to compress those variables almost entirely. This is noticeable in the \_w file size which has been reduced from 9.0 GB all the way down to less than 10 MB. However, the theta perturbation variable, being random noise at the first timestep, cannot be compressed losslessly at all (random noise cannot be compressed; in fact the goal of compression algorithms is to store our data as random noise). Thus, it is only compressed in a lossy manner, now being stored with 14 bits instead of 32.
+
+As we jump forward to the second timestep, the theta fields noise begins to affect the other variables as the temperature gradients start to cause small deviations in winds, pressure, water vapour. Our guess is that these fields are rather noisy themselves having been triggered by random noise and thus are difficult to compress. However, over time the fields become more and more coherent and the compression algorithm is able to find more and more correlations, improving the compression ratio. This can be seen in \ref{fig:uvelbincomp} with the small organized features after 120 minutes. However, at around 80 minutes, the storm starts to organize causing extreme localized values to appear in our fields. We hypothesize that this, along with the development of eddies starting to slow causes the compression ratio to slow down a bit, level off and potentially start to increase.
+
+For the TKE field, we likely get a jump in TKE at the second timestep due to the generation of a bit of TKE due to the noise which quickly dissipates. However, as the storm starts to progress, non-zero TKE values begin to permeate through increasing areas in the domain increasing the file size.
+
+In total, the TKE variable is almost completely compressed, while for this simulation the \_s file is compressed by 86\%. However, in sims without noise we expect these compression ratios to be higher still. As suggested by some compression experts \cite{klower_compressing_2021} \cite{orf_lossy_2022}, we also attempted compression with Zfp. The Zfp compression algorithm attempts to find correlations in multiple dimensions, compared to Zlib which only looks in 1D. However, our implementation of Zfp resulted in similar compression ratios for about the same quality of results despite much longer dataset load times. Thus, we decided to proceed with Zlib instead.
+
+\section{Results}
 
 
 
-%all we're doing is shifting the arbitrary cutoff
 
+
+%All in all TKE is almost completely compressed, while the _s file is compressed by 86%
+%Mention that most sims (without noise) would likely get better compression ratios
 
 
 \newpage
